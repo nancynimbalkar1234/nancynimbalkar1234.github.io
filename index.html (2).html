@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nancy Nimbalkar | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggleButton = document.getElementById("theme-toggle");
+
+    toggleButton.addEventListener("click", function () {
+      document.body.classList.toggle("dark-mode");
+    });
+  });
+</script>
+  <style>
+    :root {
+      --light-left: #e0dede;
+      --light-right: #f9f9f9;
+      --dark-left: #2d2d2d;
+      --dark-right: #1a1a1a;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #000;
+      background: linear-gradient(to right, var(--light-left) 50%, var(--light-right) 50%);
+      background-size: 200% 100%;
+      background-position: left center;
+      transition: background-position 0.8s ease-in-out, color 0.4s ease;
+    }
+
+    body.dark-mode {
+      color: #fff;
+      background: linear-gradient(to right, var(--dark-left) 50%, var(--dark-right) 50%);
+      background-position: right center;
+    }
+
+    .navbar {
+      background-color: transparent;
+      padding: 1rem;
+    }
+
+    .navbar a {
+      margin: 0 15px;
+      color: inherit;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      font-weight: bold;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 1rem auto;
+    }
+
+    .hero-buttons a {
+      color: black;
+      background: none;
+      border: none;
+      font-weight: 600;
+      margin: 0 15px;
+      font-size: 1.1rem;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .hero-buttons a:hover {
+      color: #007bff;
+    }
+
+    .theme-toggle {
+      background: none;
+      border: none;
+      font-size: 1.3rem;
+      cursor: pointer;}
+
+    .navbar a {
+      color: #000;
+      font-weight: 500;
+      text-decoration: none;
+      margin-right: 20px;
+    }
+    .navbar a:hover {
+      color: var(--primary);
+    }
+
+    .hero {
+      padding: 100px 20px;
+      background-color: var(--bg-grey);
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      font-weight: bold;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      margin: 1rem auto;
+      max-width: 700px;
+      color: #555;
+    }
+
+    .cta-button {
+    
+  background: linear-gradient(to right, #d6d3ce 50%, #f1f1f1 50%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  color: #000;
+  transition: all 0.4s ease;
+    }
+    body.dark-mode {
+  background: linear-gradient(to right, #2e2e2e 50%, #1c1c1c 50%);
+  color: #fff;
+}
+section {
+  background-color: rgba(255, 255, 255, 0.85); /* for light mode */
+  border-radius: 12px;
+  padding: 40px 20px;
+  margin: 20px auto;
+  max-width: 1000px;
+}
+
+body.dark-mode section {
+  background-color: rgba(18, 18, 18, 0.85); /* for dark mode */
+}
+
+    .cta-button:hover {
+      background-color: #050606;
+    }
+
+    section {
+      padding: 60px 20px;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      color: #666;
+      margin-bottom: 2rem;
+    }
+
+    .project-card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      transition: box-shadow 0.3s ease;
+
+    }
+
+    .project-card:hover {
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .project-card h5 {
+      color: var(--primary);
+      font-weight: bold;
+    }
+
+    .footer {
+      background-color: #f1f1f1;
+      text-align: center;
+      padding: 2rem;
+      color: #666;
+    }
+
+    .icon {
+      font-size: 1.5rem;
+      margin: 0 0.5rem;
+      color: var(--primary);
+      transition: 0.3s;
+    }
+
+    .icon:hover {
+      color: #020202;
+    }
+  body {
+  background-color: #ffffff;
+  color: #000;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #fff;
+}
+
+body.dark-mode .navbar {
+  background-color: #1f1f1f;
+  border-bottom: 1px solid #444;
+}
+
+body.dark-mode a {
+  color: #eee;
+}
+
+body.dark-mode .project-card,
+body.dark-mode .about-box {
+  background-color: #1c1c1c;
+  color: #ccc;
+}
+
+body.dark-mode .section-subtitle {
+  color: #aaa;
+}
+.navbar a {
+  text-decoration: none;
+  font-weight: 500;
+  color: black;
+}
+
+.navbar a:hover {
+  color: var(--primary);
+}
+
+body.dark-mode .navbar a {
+  color: #eee;
+}
+.btn-dark, .btn-outline-dark {
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.5rem 1.25rem;
+  border-radius: 8px;
+}
+/* Default Light Mode */
+body {
+  background-color: #fff;
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+/* Optional: Buttons adapt too */
+.dark-mode .btn {
+  border-color: #f1f1f1;
+  color: #f1f1f1;
+}
+
+.dark-mode .btn-primary {
+  background-color: #333;
+  border-color: #f1f1f1;
+}
+.plain-link {
+  color: black;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+}
+
+.plain-link:hover {
+  text-decoration: underline;
+}
+    </Style>
+  </nav>
+  </style>
+</head>
+<body>
+  <nav class="navbar d-flex justify-content-center align-items-center">
+  <a href="#hero">Home</a>
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+<button id="theme-toggle" style="background: none; border: none; cursor: pointer;">🌗</button>
+</nav>
+
+  <section id="hero" class="hero">
+    <h1>Nancy Nimbalkar</h1>
+    <p>Insightful Data Analyst & Frontend Developer</p>
+    <p>A detail-oriented front-end developer with a strong foundation in data analysis and user-focused design</p>
+    <div class="d-flex justify-content-center gap-3 mt-4">
+    <a href="mailto:nancynimbalkar123@gmail.com" class="plain-link">Contact</a>
+    <a href="Nancy Resume (2).pdf" target="_blank" class="plain-link">Resume</a>
+  </div>
+</nav>
+
+  </section>
+
+  <section id="about" style="padding: 4rem 1rem;">
+  <div style="
+    max-width: 1000px;
+    margin: auto;
+    background-color: #1c1c1c;
+    color: white;
+    border-radius: 12px;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 15px rgb(241, 241, 241);
+    font-family: Arial, sans-serif;
+  ">
+    <!-- Left Text -->
+    <div style="flex: 1 1 55%; min-width: 280px;">
+      <h2 style="font-size: 2rem; font-weight: bold; margin-bottom: 1.2rem;">
+        Hi, I am <span style="color: #ffffff;">Nancy Nimbalkar!</span>
+      </h2>
+      <p style="line-height: 1.7; color: #ccc;">
+        I thrive on building efficient, scalable, and user-friendly web applications. My expertise spans tools like Power BI, Excel, SQL, and front-end technologies including HTML, CSS, JavaScript, and Bootstrap. I enjoy combining data-driven insights with design to solve real-world problems and make impactful digital experiences.
+      </p>
+      <p style="line-height: 1.7; color: #ccc; margin-top: 1rem;">
+        Currently a final-year Electronics Engineering student at MITS Gwalior. I’ve gained hands-on experience through various internships and projects involving data analysis, front-end development, and embedded systems.
+      </p>
+      <p style="line-height: 1.7; color: #ccc; margin-top: 1rem;">
+        When I’m not coding, you’ll find me exploring design trends, crafting data visualizations, or documenting life moments.
+      </p>
+    </div>
+
+    <!-- Right Image -->
+    <div style="flex: 1 1 35%; text-align: center;">
+      <img src="c:\Users\asus\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\E5EAA4D331B90223644163F09DF29C70\WhatsApp Image 2025-06-19 at 14.21.24_2bb86e03.jpg"" alt="Nancy Nimbalkar" style="width: 100%; max-width: 250px; border-radius: 12px; border: 1px solid #444;" />
+    </div>
+  </div>
+</section>
+<!-- Skills Section With Logos -->
+<section class="py-5 bg-dark">
+  <div class="container text-center">
+    <h3 class="text-lg mb-4">Skills</h3>
+    <div class="row justify-content-center">
+      <div class="col-3 col-md-2 mb-3">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" width="50" />
+        <p class="text-sm mt-2">HTML</p>
+      </div>
+      <div class="col-3 col-md-2 mb-3">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" width="50" />
+        <p class="text-sm mt-2">CSS</p>
+      </div>
+      <div class="col-3 col-md-2 mb-3">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS" width="50" />
+        <p class="text-sm mt-2">JavaScript</p>
+      </div>
+      <div class="col-3 col-md-2 mb-3">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" width="50" />
+        <p class="text-sm mt-2">Bootstrap</p>
+      </div>
+      <div class="col-3 col-md-2 mb-3">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" width="50" />
+        <p class="text-sm mt-2">Python</p>
+      </div>
+      <div class="col-3 col-md-2 mb-3">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" width="50" />
+        <p class="text-sm mt-2">MySQL</p>
+      </div>
+      <div class="col-3 col-md-2 mb-3">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" width="50" />
+        <p class="text-sm mt-2">Git</p>
+      </div>
+    </div>
+  </div>
+</section>
+  </section>
+<section id="projects" class="py-5">
+  <div class="container">
+    <h2 class="section-title">Projects</h2>
+    <p class="section-subtitle">Explore some of the projects I worked on in the past.</p>
+    <div class="row">
+
+      <!-- DataInsights -->
+      <div class="col-md-6">
+        <div class="project-card">
+          <h5>DataInsights</h5>
+          <ul>
+  <li>Designed an interactive sales dashboard in Power BI to visualize revenue, profit margin, and product performance across regions and categories.</li>
+  <li>Preprocessed and transformed sales data using Excel formulas and pivot tables for cleaner visualization.</li>
+  <li>Applied DAX measures in Power BI to compute KPIs like total profit, average sales, and month-over-month growth.</li>
+</ul>
+
+          <div class="mb-2">
+            <span class="tech-badge text-warning">Power BI</span>
+            <span class="tech-badge text-info">Excel</span>
+            <span class="tech-badge text-success">DAX</span>
+  
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <span class="project-date"><i class="bi bi-calendar-event"></i> Nov 2024</span>
+            <div class="icon-links">
+              <a href="#"><i class="bi bi-github"></i></a>
+              <a href="#"><i class="bi bi-box-arrow-up-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sales Performance Dashboard -->
+      <div class="col-md-6">
+  <div class="project-card">
+    <h5>Sales Performance Dashboard</h5>
+    <ul>
+      <li>Developed an interactive sales dashboard using Power BI and Excel to analyze revenue trends, top-selling products, and regional performance.</li>
+      <li>Cleaned and validated raw sales data using Excel tools like PivotTables, VLOOKUP, and IF formulas.</li>
+      <li>Queried SQL databases to group and summarize data by region, product, and customer segments.</li>
+    </ul>
+    <div class="mb-2">
+      <span class="tech-badge text-warning">Power BI</span>
+      <span class="tech-badge text-info">MS Excel</span>
+      <span class="tech-badge text-success">SQL</span>
+    </div>
+    <div class="d-flex justify-content-between align-items-center">
+      <span class="project-date"><i class="bi bi-calendar-event"></i> Apr 2024</span>
+      <div class="icon-links">
+        <a href="#"><i class="bi bi-github"></i></a>
+        <a href="#"><i class="bi bi-box-arrow-up-right"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!--Exploratory Data Analysis – Toyota Dataset-->
+<div class="col-md-6">
+  <div class="project-card">
+    <h5>Exploratory Data Analysis – Toyota Dataset</h5>
+    <ul>
+      <li>Performed detailed EDA to uncover key trends and correlations in Toyota’s vehicle dataset.</li>
+      <li>Cleaned and prepared data using Pandas and visualized insights with Matplotlib and Seaborn.</li>
+      <li>Analyzed features impacting price, mileage, and model performance across various segments.</li>
+    </ul>
+    <div class="mb-2">
+      <span class="tech-badge text-warning">Python</span>
+      <span class="tech-badge text-info">Pandas</span>
+      <span class="tech-badge text-primary">Seaborn</span>
+      <span class="tech-badge text-success">EDA</span>
+    </div>
+    <div class="d-flex justify-content-between align-items-center">
+      <span class="project-date"><i class="bi bi-calendar-event"></i> Dec 2023 – Mar 2024</span>
+      <div class="icon-links">
+        <a href="#"><i class="bi bi-github"></i></a>
+        <a href="#"><i class="bi bi-box-arrow-up-right"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+      <!-- Cloud Data Engineering -->
+      <div class="col-md-6">
+  <div class="project-card">
+    <h5>Cloud Data Engineering (GCP)</h5>
+    <ul>
+      <li>Built and queried large datasets using BigQuery on Google Cloud Platform.</li>
+      <li>Deployed serverless workflows using Cloud Functions and Pub/Sub.</li>
+      <li>Analyzed streaming and batch data with Dataflow and Data Studio.</li>
+      <li>Built and trained ML models using Vertex AI for predictive analytics.</li>
+    </ul>
+    <div class="mb-2">
+      <span class="tech-badge text-info">BigQuery</span>
+      <span class="tech-badge text-warning">Cloud Functions</span>
+      <span class="tech-badge text-primary">Vertex AI</span>
+    </div>
+    <div class="d-flex justify-content-between align-items-center">
+      <span class="project-date"><i class="bi bi-calendar-event"></i> Apr 2024</span>
+      <div class="icon-links">
+        <a href="#"><i class="bi bi-github"></i></a>
+        <a href="#"><i class="bi bi-box-arrow-up-right"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!--PAM Using IC 555-->
+<div class="col-md-6">
+  <div class="project-card">
+    <h5>PAM Using IC 555</h5>
+    <ul>
+      <li>Designed a PAM (Pulse Amplitude Modulation) generator using IC555 in astable mode and an NPN transistor.</li>
+      <li>Achieved signal sampling at 32 kHz for improved audio quality.</li>
+      <li>Demonstrated analog signal modulation through hardware design.</li>
+    </ul>
+    <div class="mb-2">
+      <span class="tech-badge text-danger">IC 555</span>
+      <span class="tech-badge text-warning">Electronics</span>
+      <span class="tech-badge text-success">Hardware Project</span>
+    </div>
+    <div class="d-flex justify-content-between align-items-center">
+      <span class="project-date"><i class="bi bi-calendar-event"></i> Apr – Jun 2023</span>
+      <div class="icon-links">
+        <a href="#"><i class="bi bi-github"></i></a>
+        <a href="#"><i class="bi bi-box-arrow-up-right"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--EVM Machine using Arduino-->
+<div class="col-md-6">
+  <div class="project-card">
+    <h5>EVM Machine using Arduino</h5>
+    <ul>
+      <li>Developed a prototype Electronic Voting Machine using Arduino UNO.</li>
+      <li>Integrated keypad for secure vote input and LCD for interactive display.</li>
+      <li>Implemented logic for vote counting, result display, and system reset.</li>
+    </ul>
+    <div class="mb-2">
+      <span class="tech-badge text-success">Arduino</span>
+      <span class="tech-badge text-info">Embedded C</span>
+      <span class="tech-badge text-warning">Hardware Design</span>
+    </div>
+    <div class="d-flex justify-content-between align-items-center">
+      <span class="project-date"><i class="bi bi-calendar-event"></i> Jun 2023</span>
+      <div class="icon-links">
+        <a href="#"><i class="bi bi-github"></i></a>
+        <a href="#"><i class="bi bi-box-arrow-up-right"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </section>
+
+  <section id="experience">
+    <div class="container">
+      <h2>Experiences throughout time</h2>
+      <div class="border-start border-light ps-4">
+        <div class="mb-4">
+          <h5 class="mb-1">Data Analyst Intern </h5>
+          <p class="text-muted">Crystal tech Services — <strong>2025</strong></p>
+        </div>
+        <div class="mb-4">
+          <h5 class="mb-1">Python Programming Intern</h5>
+          <p class="text-muted">YHills Pvt.Ltd - <strong>2024</strong></p>
+        </div>
+        <div class="mb-4">
+          <h5 class="mb-1">Marketing Intern </h5>
+          <p class="text-muted">EvePaper — <strong>2024</strong></p>
+        </div>
+        <div class="mb-4">
+          <h5 class="mb-1">Front-end Development Intern</h5>
+          <p class="text-muted">Teachnook - <strong>2021</strong></p>
+        </div>
+        <div class="mb-4">
+          <h5 class="mb-1">Marketing Intern </h5>
+          <p class="text-muted">EvePaper — <strong>2024</strong></p>
+        </div>
+        <div class="mb-4">
+          <h5 class="mb-1">B.E. Electronics Engineering</h5>
+          <p class="text-muted">Mits,Gwalior — <strong>2019</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form class="mx-auto" style="max-width:600px">
+        <input type="text" class="form-control mb-3" placeholder="Your Name" required>
+        <input type="email" class="form-control mb-3" placeholder="Your Email" required>
+        <textarea class="form-control mb-3" rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+<section class="socials">
+ <section class="socials-section">
+  <h2>Socials & Contact</h2>
+  <div class="social-icons">
+    <a href="mailto:nancynimbalkar123@gmail.com" target="_blank" class="icon"><i class="fas fa-envelope"></i></a>
+    <a href="https://www.linkedin.com/in/nancy-nimbalkar-b09673264/" target="_blank" class="icon"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://github.com/nancynimbalkar1234" target="_blank" class="icon"><i class="fab fa-github"></i></a>
+</div>
+</section>
+  </div>
+</section>
+  <footer class="footer">
+  <p>Designed & Built by 
+    <span class="gradient-name">Nancy Nimbalkar</span>
+  </p>
+  <p>© 2025</p>
+</footer>
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('light-mode');
+    }
+
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 60 },
+        size: { value: 3 },
+        color: { value: "#00d8ff" },
+        line_linked: { enable: true, color: "#00d8ff" },
+        move: { enable: true, speed: 2 }
+      },
+      interactivity: {
+        events: { onhover: { enable: true, mode: "repulse" } }
+      }
+    });
+  </script>
+</body> 
